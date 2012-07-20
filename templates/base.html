@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <title>basehtml</title>
+	  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
+	  <link rel="stylesheet" href="{{ MEDIA_URL }}css/reset-min.css" type="text/css" />
+	  <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" type="text/css" />
+  </head>
+  <body>
+  	  <div id="head">
+	  	  <div id="head_nav">
+			  <table border="0" cellspacing="0" cellpadding="0">
+	  	  		<tr><th>Header</th></tr>
+	  	  		<tr><td>Data</td></tr>  	  	
+	  	      </table>
+		  </div>
+      </div>
+	  <div id="body">
+		  {% block body-top %}
+			<div id="body-top-little"></div>
+			<div class="top-border-bg"></div>
+			<div class="top-border"></div>
+		  {% endblock %}
+		  <div id="main">
+		  {% block main %}
+		  {% endblock %}
+          </div>
+	  </div>
+	  
+	  <div id="footer">
+		  <div id="footer_nav">
+		  	  <table border="0" cellspacing="0" cellpadding="0">
+		  	  	<tr><th>Header</th></tr>
+		  	  	<tr><td>Data</td></tr>
+		  	  </table>
+		  </div>
+	  </div>
+  </body>
+</html>
