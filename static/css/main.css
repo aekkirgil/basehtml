@@ -6,6 +6,24 @@ body {
 	padding:0;
 	color:#fff;
 }
+.clearfloat{
+	clear:both;
+	height:0;
+	font-size:1px;
+	line-height:0px
+}
+@font-face {
+	font-family: "DroidSerif";
+	src: url('../fonts/Droid-Serif/DroidSerif-Regular.ttf') format("truetype");
+}
+@font-face {
+	font-family: "Helvetica";
+	src: url('../fonts/Helvetica/hlbc__.PFB');
+}
+@font-face {
+	font-family: "Journal";
+	src: url('../fonts/Journal/journal.ttf') format("truetype");
+}
 #head {
 	margin: 0; 
 	padding: 0; 
@@ -25,6 +43,25 @@ body {
 	height:100%px;
 	margin-top:-6px;
 }
+.head-icon {
+	width:50px;
+	height:30px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-140px -242px;
+	float:left;
+}
+.logo {
+	font-family:Journal;
+	font-size:38px;
+	width:150px;
+	height:50px;
+	float:left;
+}
+.head-menu {
+	width:750px;
+	height:50px;
+}
+
 #body-top {
 	width:100%;
 	height:249px;
@@ -53,7 +90,7 @@ body {
 }
 #main {
 	margin:0 auto;
-	width:1000px;
+	width:980px;
 	padding-top:10px;
 }
 
@@ -74,14 +111,157 @@ body {
 	background: url('../img/slider/resim.jpg') no-repeat;
 }
 .center-nav {
-	height:120px;
-	background-color:black;
+	width:980px;
+	height:105px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-20px -12px;
+	margin:10px 0px;
 }
 .center-up {
-	height:280px;
-	background-color:white;
+	padding-bottom:20px;
 }
 .center-down {
+	padding-bottom:10px;
+}
+.center-down h1 {
+	font-family:journal;
+	font-size:40px;
+	color:#383838;
+	margin-left:55px;
+}
+.center-nav-text {
+	width:355px;
+	float:left;
+	color:#4f7787;
+	font-family:DroidSerif;
+	padding:10px;	
+}
+.center-nav-button {
+	width:230px;
+	height:50px;
+	float:left;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-790px -128px;
+	margin:25px 0px;
+}
+.center-nav-button a{
+	text-decoration:none;
+	color:#fff;
+	padding:8px 36px;
+	font-size:22px;
+	font-family:DroidSerif;
+	line-height:42px;
+}
+.contact-now-left {
+	float:left;
+	height:130px;	
+	width:490px;	
+}
+.contact-now-right {
+	float:left;
 	height:130px;
-	background-color:blue;
+	width:490px;
+}
+.rozet {
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-90px -277px;	
+	width:50px;
+	height:50px;
+	position:absolute;
+}
+.ct-click {
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-90px -230px;	
+	width:50px;
+	height:50px;
+	float:left;
+	margin-left:100px;
+}
+.ct-button {
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-875px -254px;	
+	width:125px;
+	height:50px;
+	float:left;
+	margin-left:30px;
+
+}
+.ct-button a {
+	color:#6e4f0c;
+	padding:0px 13px 6px;
+	text-decoration:none;
+	line-height:26px;
+	text-align:center;
+}
+.twitter-text {
+	color:#B9B9B9;
+	text-align:right;
+	font-size:14px;
+	padding:25px 75px;
+}
+.parantez {
+	float:right;
+	width:10px;
+	height:100px;
+	background: url('../img/base_sprite2.png') no-repeat;
+	background-position:-105px -122px;
+}
+.twitter-icon {
+	float:right;
+	width:60px;
+	height:100px;
+	background: url('../img/base_sprite2.png') no-repeat;
+	background-position:-24px -122px;
+}
+.pagelist {
+	width:326px;
+	height:240px;
+	float:left;
+}
+.pagelist h3 {font-family:DroidSerif;font-size:22px;text-align:center;color:#383838;}
+.pagelist p {font-family:Helvetica;font-size:14px;color:#b9b9b9;text-align:center;padding:10px 10px;}
+.mr0 {margin:0 auto;}
+.icona {
+	width:35px;
+	height:42px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-40px -275px;
+}
+.iconb {
+	width:35px;
+	height:42px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-41px -323px;
+}
+.iconc {
+	width:35px;
+	height:42px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-41px -230px;
+}
+.little-border {
+	margin-top:15px;
+	width:170px;
+	height:20px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-370px -200px;
+}
+.long-border {
+	width:625px;
+	height:7px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-135px -153px;
+}
+.pagelist-button {
+	width:125px;
+	height:30px;
+	background: url('../img/base_sprite.png') no-repeat;
+	background-position:-875px -204px;
+	padding-top:5px;
+	text-align:center;
+}
+.pagelist-button a {
+	padding:0px 14px 10px;
+	color:#ff4d2a;
+	text-decoration:none;
 }
