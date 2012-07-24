@@ -60,8 +60,29 @@ body {
 .head-menu {
 	width:750px;
 	height:50px;
+	float:left;
 }
-
+.head-menu ul {
+	float:right;
+}
+.head-menu li{
+	width:100px;
+	float:left;
+	padding:13px 10px;
+	font-family:Journal;
+	font-size:30px;
+	font-weight:bold;
+	text-shadow:-1px 2px 0 #00718d;
+}
+.head-menu ul a {
+	color:#fff;
+	text-decoration:none;
+	text-shadow:-1px 2px 0 #00718d;
+	
+}
+.head-menu li:hover {
+	margin-top:2px;	
+}
 #body-top {
 	width:100%;
 	height:249px;
@@ -92,19 +113,27 @@ body {
 	margin:0 auto;
 	width:980px;
 	padding-top:10px;
+	min-height:940px;
 }
 
 #footer {
 	margin:0;
 	padding:0;
 	width:100%;
-	height:209px;
+	height:100px;
 	background: url('../img/footer_bg2.png') repeat;
 }
-#footer_nav {
-	margin:0 auto;
-	width:1000px;
-	height:209px;
+.footer_nav {
+	background: url('../img/base_sprite2.png') no-repeat;
+	background-position:-91px -340px;
+	width:80px;
+	height:40px;
+}
+.footer_nav a {
+	float:left;
+	width:40px;
+	padding:10px 0px;
+	text-indent:-9999px;
 }
 .slider {
 	height:410px;
@@ -264,4 +293,23 @@ body {
 	padding:0px 14px 10px;
 	color:#ff4d2a;
 	text-decoration:none;
+}
+.dash {
+	width:300px;
+	height:300px;
+	background: url('../img/cbg.gif') repeat;
+	border-radius:200px;
+	border:5px solid #fff;
+	float:left;
+	text-align:center;
+}
+.htext {
+	margin-top:90px !important;
+}
+.dash h1 {
+	color:#000;
+	font-size:32px;
+	margin-top:120px;
+	font-family:DroidSerif;
+	font-weight:bold;
 }

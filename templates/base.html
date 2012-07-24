@@ -10,18 +10,17 @@
   <body>
   	  <div id="head">
 	  	  <div id="head_nav">
-			  <div class="head-icon"></div>
+			  <a href="{% url index %}"><div class="head-icon"></div></a>
 			  <div class="logo">
 				  <h3>&lt;BaseHtml&gt;</h3>
 			  </div>
 			  <div class="head-menu">
 				  {% block head-navigation %}
 				      <ul>
-				      	<li>Home</li>
-				      	<li>Projects</li>
-                        <li>What do we do?</li>
-						<li>Blog</li>
-						<li>Contact</li>
+				      	<li><a href="{% url index %}">Ana Sayfa</a></li>
+				      	<li><a href="{% url hakkimizda %}">Hakkimizda</a></li>
+                        <li><a href="{% url siparis %}">Siparis</a></li>
+						<li><a href="{% url iletisim %}">İletisim</a></li>
 				      </ul>
 				      
 				  {% endblock %}
@@ -40,11 +39,13 @@
           </div>
 	  </div>
 	  <div id="footer">
-		  <div id="footer_nav">
-		  	  <table border="0" cellspacing="0" cellpadding="0">
-		  	  	<tr><th>Header</th></tr>
-		  	  	<tr><td>Data</td></tr>
-		  	  </table>
+		  <div class="footer_nav mr0">
+		  	  <ul>
+		  	  	<li><a href="#">twitter</a></li>
+		  	  	<li><a href="#">facebook</a></li>
+				
+		  	  </ul>
+		  	  
 		  </div>
 	  </div>
   </body>

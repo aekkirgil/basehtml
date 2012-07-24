@@ -12,6 +12,8 @@ urlpatterns = patterns('',
     url(r'^$', 'basehtml.home.views.index', name='index'),
 	url(r'^index/$', 'basehtml.home.views.index', name='index'),
 	url(r'^iletisim/$', 'basehtml.home.views.iletisim', name='iletisim'),
+	url(r'^hakkimizda/$', 'basehtml.home.views.hakkimizda', name='hakkimizda'),
+	url(r'^siparis/$', 'basehtml.home.views.siparis', name='siparis'),
     # url(r'^basehtml/', include('basehtml.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

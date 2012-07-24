@@ -12,3 +12,9 @@ def iletisim(request):
 
 def index(request):
 	return render(request, 'index.html', {})
+
+def hakkimizda(request):
+	return render(request, 'hakkimizda.html', {})
+
+def siparis(request):
+	return render(request, 'siparis.html', {})
