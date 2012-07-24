@@ -1,6 +1,20 @@
 {% extends "base.html" %}
 {% block main %}
-	<div class="dash"><h1>HAKKIMIZDA</h1></div>
-	<div class="dash"><h1 class="htext">NASIL CALISIYORUZ</h1></div>
-	<div class="dash"><h1>S.S.S.</h1></div>
+	<div class="dash1"><h1><a href="{% url hakkimizda %}">HAKKIMIZDA</a></h1></div>
+	<div class="dash2"><h1 class="htext"><a href="{% url calisiyoruz %}">NASIL CALISIYORUZ</a></h1></div>
+	<div class="dash3"><h1><a href="{% url sorular %}">S.S.S.</a></h1></div>
+	<br class="clearfloat" />
+	<div class="hakkimizda-detay">
+		<h2>BASE HTML</h2>
+		<p>Basehtml.com'da web ortamı için hazırladığınız tasarımlarınızı XHTML/CSS dosyalarına dönüştürme, Wordpress tema adaptasyonu, HTML e-posta şablonu hazırlama ve özel Javascript uygulaması oluşturma hizmetlerini sunuyoruz.</p>
+		<h2>Biz Kimiz?</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>	
+		<h2>Daha Fazla Bilgi</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet,</p>
+		<h2>İletisim Kurun</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, </p>
+	</div>
+		
+		
 {% endblock %}
+

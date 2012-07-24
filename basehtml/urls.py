@@ -13,6 +13,8 @@ urlpatterns = patterns('',
 	url(r'^index/$', 'basehtml.home.views.index', name='index'),
 	url(r'^iletisim/$', 'basehtml.home.views.iletisim', name='iletisim'),
 	url(r'^hakkimizda/$', 'basehtml.home.views.hakkimizda', name='hakkimizda'),
+	url(r'^calisiyoruz/$', 'basehtml.home.views.calisiyoruz', name='calisiyoruz'),
+	url(r'^sorular/$', 'basehtml.home.views.sorular', name='sorular'),
 	url(r'^siparis/$', 'basehtml.home.views.siparis', name='siparis'),
     # url(r'^basehtml/', include('basehtml.foo.urls')),
 

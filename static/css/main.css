@@ -76,7 +76,7 @@ body {
 .head-menu ul {
 	float:right;
 }
-.head-menu li{
+.head-menu li {
 	width:100px;
 	float:left;
 	padding:13px 10px;
@@ -125,6 +125,7 @@ body {
 	width:980px;
 	padding-top:10px;
 	min-height:940px;
+	padding-bottom:20px;
 }
 
 #footer {
@@ -305,22 +306,83 @@ body {
 	color:#ff4d2a;
 	text-decoration:none;
 }
-.dash {
-	width:300px;
-	height:300px;
+.dash1 {
+	width:250px;
+	height:250px;
+	background: url('../img/rounder1.jpg') repeat;
+	border-radius:200px;
+	border:5px solid #fff;
+	float:left;
+	text-align:center;
+	opacity:0.8;
+	margin-left:130px;
+}
+.dash2 {
+	width:250px;
+	height:250px;
+	background: url('../img/rounder2.jpg') repeat;
+	border-radius:200px;
+	border:5px solid #fff;
+	float:left;
+	text-align:center;
+	opacity:0.8;
+	margin-left:-30px;
+}
+.dash3 {
+	width:250px;
+	height:250px;
 	background: url('../img/cbg.gif') repeat;
 	border-radius:200px;
 	border:5px solid #fff;
 	float:left;
 	text-align:center;
+	opacity:0.8;
+	margin-left:-30px;
 }
 .htext {
-	margin-top:90px !important;
+	margin-top:40px !important;
 }
-.dash h1 {
-	color:#000;
+.dash1 h1{
+	color:#09202c;
 	font-size:50px;
-	margin-top:120px;
+	margin-top:95px;
 	font-family:LeagueGothicRegular;
 	font-weight:bold;
+}
+.dash1 a {
+	color:#09202c;
+	text-decoration:none;
+}
+.dash2 h1{
+	color:#09202c;
+	font-size:50px;
+	margin-top:95px;
+	font-family:LeagueGothicRegular;
+	font-weight:bold;
+}
+.dash2 a {
+	color:#09202c;
+	text-decoration:none;
+}
+.dash3 h1{
+	color:#09202c;
+	font-size:50px;
+	margin-top:95px;
+	font-family:LeagueGothicRegular;
+	font-weight:bold;
+}
+.dash3 a {
+	color:#09202c;
+	text-decoration:none;
+}
+.hakkimizda-detay h2{
+	font-family:LeagueGothicRegular;
+	color:#09202c;
+	font-size:26px;
+	line-height:80px;
+}
+.hakkimizda-detay p{
+	font-family:DroidSerif;
+	color:#09202c;
+	font-size:18px;
 }

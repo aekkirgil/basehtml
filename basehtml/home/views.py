@@ -18,3 +18,9 @@ def hakkimizda(request):
 
 def siparis(request):
 	return render(request, 'siparis.html', {})
+
+def calisiyoruz(request):
+	return render(request, 'calisiyoruz.html', {})
+
+def sorular(request):
+	return render(request, 'sorular.html', {})
