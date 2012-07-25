@@ -17,10 +17,10 @@
 			  <div class="head-menu">
 				  {% block head-navigation %}
 				      <ul>
-				      	<li><a href="{% url index %}">Ana Sayfa</a></li>
+				      	<li><a class="nav-current" href="{% url index %}">Ana Sayfa</a></li>
 				      	<li><a href="{% url hakkimizda %}">Hakkimizda</a></li>
                         <li><a href="{% url siparis %}">Siparis</a></li>
-						<li><a href="{% url iletisim %}">İletisim</a></li>
+						<li><a class="nav-current" href="{% url iletisim %}">İletisim</a></li>
 				      </ul>
 				      
 				  {% endblock %}
