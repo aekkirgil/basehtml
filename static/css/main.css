@@ -36,16 +36,16 @@ body {
 	src: url('../fonts/Journal/journal.ttf') format("truetype");
 }
 .dro {
-	font-family:DroidSerif;
+	font-family:DroidSerif !important;
 }
 .hel {
-	font-family:Helvetica;
+	font-family:Helvetica !important;
 }
 .jou {
-	font-family:Journal;
+	font-family:Journal !important;
 }
 .league {
-	font-family:LeagueGothicRegular;
+	font-family:LeagueGothicRegular !important;
 }
 #head {
 	margin: 0; 
@@ -183,6 +183,7 @@ body {
 	width:145px;
 	height:1px;
 	list-style-type:none !important;
+	margin-left:-20px;
 }
 .footer_nav3 {
 	width:200px;
@@ -468,14 +469,76 @@ body {
 	position:absolute;
 	margin:-20px 0px 0px 60px;
 }
+.title {
+	width:326px;
+	text-align:center;
+	float:left;
+	padding-top:15px;
+	color:#284d5c;
+}
+.title h3 {
+	font-family:DroidSerif !important;
+}
 .sip-main {
-	height:310px;
-	background-color:black;
-	border-radius:10px;
+	position:relative;
+	z-index:1px;
+	overflow:hidden;
+	padding-top:20px;
 }
 .sip-window {
 	float:left;
-	width:195px;
-	background-color:red;
-	height:100%;
+	min-height:250px;
+	width:325px;
 }
+.sip-window li {
+	color:#284d5c;
+	list-style-type:circle;
+	line-height:30px;
+}
+.sip-window ul {
+	padding:15px 35px 15px 85px;
+}
+.sip-window h3 {
+	color:#a64a30;
+	font-weight:bold;
+	text-align:center;
+	padding-top:10px;
+	font-size:22px;
+}
+.sip-center-table {
+	height:100%;
+	overflow:hidden;
+	background: url('../img/rounder1.jpg') repeat;
+}
+.sip-main-top {
+	height:50px;
+	background: url('../img/cbg.gif') repeat;
+	z-index:-10;
+	border-bottom:1px solid #98b4ba;
+	border-right:1px solid #cecece;
+	border-left:1px solid #cecece;
+	border-top:1px solid #cecece;
+	border-radius: 13px 13px 0px 0px;
+}
+.sip-main-bottom {
+	height:50px;
+	background-color:#ebebeb;
+	z-index:-10;
+	border-bottom:4px solid #cecece;
+	border-top:1px solid #cecece;
+	border-radius:0px 0px 13px 13px
+}
+.br-left {
+	border-left:1px solid #cecece;
+}
+.br-right{
+	border-right:1px solid #cecece;
+}
+.check-button {
+	background: url('../img/base_sprite2.png') no-repeat;
+	width:195px;
+	height:50px;
+	background-position:-809px -127px;
+	float:left;
+}
+

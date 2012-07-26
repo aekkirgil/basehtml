@@ -1,10 +1,154 @@
 {% extends "base.html" %}
+{% block extra_head %}
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var maxHeight = 0;
+			$('.sip-window').each(function(){
+				currentHeight=$(this).height();
+				//console.log(currentHeight);
+				if (currentHeight > maxHeight){
+				    maxHeight = currentHeight;
+				}
+			});
+			$('.sip-window').height(maxHeight);
+		});
+
+	</script>
+{% endblock %}
+
 {% block main %}
 	<div class="sip-main">
-		<div class="sip-window">tarife1</div>
-		<div class="sip-window">tarife2</div>
-		<div class="sip-window">tarife3</div>
-		<div class="sip-window">tarife4</div>
-		<div class="sip-window">tarife5</div>
+		<div class="sip-main-top dro">
+			<div class="title"><h3>HTML & CSS</h3></div>
+			<div class="title"><h3>MAİLİNG</h3></div>
+			<div class="title"><h3>NEWSLETTER</h3></div>
+		</div>
+		<div class="sip-center-table">
+			<div class="sip-window br-left">
+				<h3><i>$300</i></h3>
+				<ul>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+				</ul>
+							
+			</div>
+			<div class="sip-window br-left br-right">
+				<h3><i>$100</i></h3>
+				<ul>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+				</ul>			
+			</div>
+			<div class="sip-window br-right">
+				<h3><i>$100</i></h3>
+				<ul>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+				</ul>			
+			</div>
+			<br class="clearfloat" />
+			<div class="sip-main-bottom br-left br-right">
+				<div class="check-button"></div>
+				<div class="check-button"></div>
+				<div class="check-button"></div>			
+			</div>
+			<div class="middle-sip-brdr"></div>
+		</div>
+	</div>
+
+
+	<div class="sip-main">
+		<div class="sip-main-top dro">
+			<div class="title"><h3>HTML & CSS</h3></div>
+			<div class="title"><h3>MAİLİNG</h3></div>
+			<div class="title"><h3>NEWSLETTER</h3></div>
+		</div>
+		<div class="sip-center-table">
+			<div class="sip-window br-left">
+				<h3><i>$300</i></h3>
+				<ul>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+				</ul>
+							
+			</div>
+			<div class="sip-window br-left br-right">
+				<h3><i>$100</i></h3>
+				<ul>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+				</ul>			
+			</div>
+			<div class="sip-window br-right">
+				<h3><i>$100</i></h3>
+				<ul>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+					<li>jquery slider</li>
+					<li class="bg-li"></li>
+				</ul>			
+			</div>
+			<br class="clearfloat" />
+			<div class="sip-main-bottom br-left br-right"></div>
+			<div class="middle-sip-brdr"></div>
+		</div>
 	</div>
 {% endblock %}
