@@ -63,7 +63,7 @@ body {
 	margin:0;
 	padding:0;
 	width:100%;
-	height:100%px;
+	height:100%;
 	margin-top:-6px;
 }
 .head-icon {
@@ -212,10 +212,6 @@ body {
 	background-position:-91px -411px;
 	width:980px;
 	height:40px;
-}
-.slider {
-	height:410px;
-	background: url('../img/slider/resim.jpg') no-repeat;
 }
 .center-nav {
 	width:980px;
@@ -541,4 +537,62 @@ body {
 	background-position:-809px -127px;
 	float:left;
 }
+/* slider */
+
+.slider {
+	width:980px;
+	position:relative;
+	padding-top:30px;
+}
+ .slides_container {
+    width:980px;
+    height:410px;
+}
+.slides_container div {
+    width:980px;
+    height:410px;
+    display:block;
+}
+.pagination {
+	position:absolute;
+	top:9px;
+	left:458px;
+}
+.pagination li {
+	float:left;
+	list-style:none !important;
+	line-height: 19px;
+	margin-left:5px;
+}
+.pagination li a {
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: url('../img/slider-pagination-img.png');
+	float: left;
+	overflow: hidden;
+	text-indent: 99px;
+}
+.pagination li.current a {
+	background: url('../img/slider-pagination-current-img.png');
+}
+.prevbg {
+	background: url('../img/base_sprite2.png') no-repeat;
+	width: 50px;
+	height: 50px;
+	background-position: -142px -276px;
+	position: absolute;
+	left: 10px;
+	top: 164px; 
+}
+.nextbg {
+	background: url('../img/base_sprite2.png') no-repeat;
+	width: 50px;
+	height: 50px;
+	background-position: -142px -276px;
+	position: absolute;
+	left: 1060px;
+	top: 164px; 
+}
+
 

@@ -3,7 +3,27 @@
 	<div id="body-top"></div>
 {% endblock %}
 {% block main %}
-    <div class="slider"><h3 style="font-size:48px;text-align:center;color:#000;"><i>SLİDER</i></h3></div>
+    <div class="slider">
+    	<div id="slides">
+            <div class="slides_container">
+                <div>
+                    <img src="{{ STATIC_URL }}img/slider/resim.jpg">
+                </div>
+                <div>
+                    <img src="http://placehold.it/980x410">
+                </div>
+                <div>
+                    <img src="http://placehold.it/980x410">
+                </div>
+                <div>
+                    <img src="http://placehold.it/980x410">
+                </div>
+            </div>
+            
+            <div class="as"><a href="#" class="prev">&nbsp;</a></div>
+        	<a href="#" class="next"><span class="nextbg">&nbsp;</span></a>
+        </div>
+    </div>
 	<div class="center-nav">
 		<div class="center-nav-text">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>		
