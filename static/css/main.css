@@ -542,7 +542,7 @@ body {
 .slider {
 	width:980px;
 	position:relative;
-	padding-top:30px;
+	padding-top:60px;
 }
  .slides_container {
     width:980px;
@@ -557,6 +557,7 @@ body {
 	position:absolute;
 	top:9px;
 	left:458px;
+	margin-top: 20px;
 }
 .pagination li {
 	float:left;
@@ -576,15 +577,19 @@ body {
 .pagination li.current a {
 	background: url('../img/slider-pagination-current-img.png');
 }
-.prevbg {
+
+.prevbg {
 	background: url('../img/base_sprite2.png') no-repeat;
 	width: 50px;
 	height: 50px;
-	background-position: -142px -276px;
+	background-position: -210px -279px;
 	position: absolute;
-	left: 10px;
-	top: 164px; 
-}
+	left: -130px;
+	top: 230px; 
+	z-index: 999;
+
+	}
+	
 .nextbg {
 	background: url('../img/base_sprite2.png') no-repeat;
 	width: 50px;
@@ -592,7 +597,7 @@ body {
 	background-position: -142px -276px;
 	position: absolute;
 	left: 1060px;
-	top: 164px; 
+	top: 230px; 
 }
 
 
