@@ -10,6 +10,12 @@
 		{% endblock %}
   </head>
   <body>
+	
+	 <!-- Bismillahirrahmanirrahiym
+“Allahümme ya rabbi ve cebraile ve mikaile ve israfile ve azraile ve ibrahime ve ismaile ve ishaka ve ya’kube ve münzile’l-berekati ve münzilet-Tevrati ve’z-Zeburi ve’l-İncili ve’l-Furkani ve la havle ve la kuvvete illa billahi’l aliyyi’l-aziym.La ilahe illallahü’l- Melikü’l-Hakku’l-Mübin.Muhammedün rasulullahi sadiku’l vadi’l-Emin ya rabbi ya rabbi ya hayyu ya kayyumu ya ze’l-celali ve’l-ikram.Es’elüke ya rabbe’l-Arşi’l-Aziym.En yerzükaniy rızkan halalen tayyiben birahmetike ya erhamer rahimiyn.
+Yemliyha, Mernuş, Debernuş, Misliyna, Mekseliyna,
+Şazenuş, Kefeştatıyyuş, Kıtmir”
+  <!-->
   	  <div id="head">
 	  	  <div id="head_nav">
 			  <a href="{% url index %}"><div class="head-icon"></div></a>
@@ -32,7 +38,12 @@
 	  <div id="body">
 		  {% block body-top %}
 			<div id="body-top-little"></div>
-			<div class="top-border-bg"></div>
+			<div class="top-border-bg">
+				<div class="bread mr0">
+				{% block bread %}
+				{% endblock %}
+				</div>		
+			</div>
 			<div class="top-border"></div>
 		  {% endblock %}
 		  <div id="main">
