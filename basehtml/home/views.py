@@ -6,22 +6,36 @@ from django.core.urlresolvers import reverse
 from basehtml.home.models import *
 
 def base(request):
-	return render(request, 'base.html', {})
+    nav = 'base'
+    
+    return render(request, 'base.html', {"nav": nav})
 
 def iletisim(request):
-	return render(request, 'contact.html', {})
+    nav = 'contact'
+    
+    return render(request, 'contact.html', {"nav": nav})
 
 def index(request):
-    return render(request, 'index.html', {})
+    nav = 'index'
+    
+    return render(request, 'index.html', {"nav": nav})
 
 def hakkimizda(request):
-	return render(request, 'hakkimizda.html', {})
+    nav = 'about'
+    
+    return render(request, 'hakkimizda.html', {"nav": nav})
 
 def siparis(request):
-	return render(request, 'siparis.html', {})
+    nav = 'order'
+    
+    return render(request, 'siparis.html', {"nav": nav})
 
 def calisiyoruz(request):
-	return render(request, 'calisiyoruz.html', {})
+    nav = 'calisiyoruz'
+    
+    return render(request, 'calisiyoruz.html', {"nav": nav})
 
 def sorular(request):
-	return render(request, 'sorular.html', {})
+    nav = 'sorular'
+    
+    return render(request, 'sorular.html', {"nav": nav})

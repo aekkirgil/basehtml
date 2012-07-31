@@ -8,8 +8,23 @@
 	  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
 	  <script type="text/javascript" src="{{ STATIC_URL }}js/slides.jquery.js"></script>
 	  <script type="text/javascript" src="{{ STATIC_URL }}js/basehtml.js"></script>
-		{% block extra_head %}
-		{% endblock %}
+		{% block extra_head %}{% endblock %}
+		    <style>
+		          {% if nav %}
+                  #nav_{{nav}} {
+                  	color: #B0EBFF !important;
+                    background-color: #051014;
+                    border-bottom: 1px solid #1C2C30;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    border-radius: 7px;
+                    padding: 8px;
+                    moz-box-shadow: inset 0 0 5px 5px #05100D;
+                    -webkit-box-shadow: inset 0 0 5px 5px ##05100D;
+                    box-shadow: inset 0 0 4px 4px #05100D;
+                  }
+                  {% endif %}
+		    </style>
   </head>
   <body>
   	  <div id="head">
@@ -21,10 +36,10 @@
 			  <div class="head-menu">
 				  {% block head-navigation %}
 				      <ul>
-				      	<li><a class="nav-current" href="{% url index %}">{% trans "Ana Sayfa" %}</a></li>
-				      	<li><a href="{% url hakkimizda %}">{% trans "Hakkimizda" %}</a></li>
-                        <li><a href="{% url siparis %}">Siparis</a></li>
-						<li><a class="nav-current" href="{% url iletisim %}">İletisim</a></li>
+				      	<li><a id="nav_index" href="{% url index %}">{% trans "Ana Sayfa" %}</a></li>
+				      	<li><a id="nav_about" href="{% url hakkimizda %}">{% trans "Hakkimizda" %}</a></li>
+                        <li><a id="nav_order" href="{% url siparis %}">Siparis</a></li>
+						<li><a id="nav_contact" href="{% url iletisim %}">İletisim</a></li>
 				      </ul>
 				      
 				  {% endblock %}
