@@ -12,8 +12,7 @@ def iletisim(request):
 	return render(request, 'contact.html', {})
 
 def index(request):
-	i = UploadSliderImg.objects.all().order_by('sort')
-	return render_to_response('index.html', {'image': i})
+    return render(request, 'index.html', {})
 
 def hakkimizda(request):
 	return render(request, 'hakkimizda.html', {})
