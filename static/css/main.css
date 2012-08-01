@@ -43,9 +43,12 @@ a {
 }
 .dro {
 	font-family:DroidSerif !important;
+	font-size: 14px;
+	line-height: 35px;
 }
 .hel {
 	font-family:Helvetica !important;
+	font-size: 12px;
 }
 .jou {
 	font-family:Journal !important;
@@ -174,9 +177,9 @@ a {
 	padding-top:10px;
 }
 .footer_nav1 {
-	width:200px;
+	width: 160px;
 	float:left;
-	padding:0px 20px 20px 20px;
+	margin: 35px 0 0 0;
 }
 .footer_nav2 {
 	width:200px;
@@ -185,8 +188,8 @@ a {
 }
 .hel li {
 	list-style-type:circle;
-	margin:5px 0px 0px 15px;
-	line-height:25px;
+	margin: 0 0 0 15px;
+	line-height: 20px;
 }
 .bg-li {
 	background: url('../img/base_sprite2.png') no-repeat;
@@ -452,14 +455,15 @@ a {
 	text-decoration:none;
 }
 .hakkimizda-detay h2{
-	font-family:LeagueGothicRegular;
-	color:#09202c;
-	font-size:26px;
-	line-height:80px;
+	font-family: LeagueGothicRegular;
+    color: #CD6B52;
+    font-size: 26px;
+    line-height: 80px;
+    font-weight: 700;
 }
 .hakkimizda-detay p{
-	font-family:DroidSerif;
-	color:#09202c;
+	font-family:LeagueGothicRegular;
+	color:#515151;
 	font-size:18px;
 }
 .map {
@@ -634,17 +638,10 @@ a {
 }
 
 .contact-arrow {
-    transform:rotate(35deg);
-    -ms-transform:rotate(35deg); /* Internet Explorer */
-    -o-transform:rotate(35deg); /* Opera */
-    -moz-transform:rotate(35deg); /* Firefox */
-    -webkit-transform:rotate(35deg); /* Safari and Chrome */
-    background: url('../img/base_sprite.png') no-repeat;
-    background-position: -90px -230px;
+    background: url('../img/arrow.png') no-repeat;
     width: 50px;
     height: 50px;
-    float: left;
-    margin: -10px 50px;;
+    margin: 1px 50px;;
 }
 
 .contact-form li {
@@ -657,7 +654,17 @@ a {
     display: inline-block;
 
 }
+.contact-form p {
+    font-family: LeagueGothicRegular;
+    font-size: 18px;
+    color: #515151;
+    line-height: 32px;
 
+}
+em {
+    color: #CD6B52;
+    font-size: 25px;
+}
 .contact-form-input {
     display: inline-block;
     border: 2px solid #d2d2d2;
@@ -668,7 +675,8 @@ a {
     -moz-border-radius: 50px;
     border-radius: 50px;
     outline: 0;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: LeagueGothicRegular;
     color: #515151;
     padding-left: 10px;
     background-color: #ffffff;
@@ -684,21 +692,18 @@ a {
     -moz-border-radius: 30px;
     border-radius: 30px;
     outline: 0;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: LeagueGothicRegular;
     color: #515151;
     padding: 10px;
     background-color: #ffffff;
 }
 
 .form-comment {
-    font-size: 14px;
-    color: #515151;
-    padding: 0 0 10px 32px;
+    padding: 0 0 0 32px;
 }
 
 .form-textarea {
-    font-size: 14px;
-    color: #515151;
     padding: 27px 0 0 32px;
 }
 
@@ -710,7 +715,7 @@ a {
 	border: 0 !important;
 	z-index: 999;
 	font-family: LeagueGothicRegular;
-	color: white;
+	color: #ffffff;
 	font-size: 24px;
 }
 
@@ -842,4 +847,22 @@ a {
 	padding:15px;
 }
 .sip-pointer td{padding:0px 5px 0px 5px;}
-#demo-frame > div.demo { padding: 10px !important; };
+#demo-frame > div.demo { padding: 10px !important; }
+
+.notification-input {
+    display: inline-block;
+    border: 2px solid #d2d2d2;
+    width: 160px;
+    height: 34px;
+    margin: 0 0 0 20px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    outline: 0;
+    font-size: 16px;
+    font-family: LeagueGothicRegular;
+    color: #515151;
+    padding-left: 10px;
+    background-color: #dcdcdc;
+}
+

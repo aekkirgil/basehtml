@@ -18,9 +18,7 @@ $(document).ready(function(){
 		$('.tar-main').fadeOut('fast');	
 		$('.sip-tar').fadeIn('fast');
 	});
-});
 
-$(document).ready(function(){
 	if($('.sip-window').length) {
 		var maxHeight = 0;
 		$('.sip-window').each(function(){
@@ -32,6 +30,36 @@ $(document).ready(function(){
 		});
 		$('.sip-window').height(maxHeight);
 	}
+	
+	$( "#slider-range-min" ).slider({
+			range: "min",
+			value: 100,
+			min: 100,
+			max: 700,
+			slide: function( event, ui ) {
+				$( "#amount" ).val( "$" + ui.value );
+			}
+		});
+		$( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+		
+		/*$('').each(function() {
+        $(this).val('*');
+        var orginalValue = $(this).val();
+        $(this).focus(function() {
+            
+            if ($(this).val() == orginalValue) {
+                $(this).val('');
+            }
+        });
+        $(this).blur(function(){
+            if($(this).val() == ''){
+                $(this).val(orginalValue);
+            }
+            else {
+                $(this).val();
+            }                
+        });
+    });*/
 });
 
 YUI().use('transition', 'node', 'slider', function (Y) {
@@ -54,17 +82,4 @@ YUI().use('transition', 'node', 'slider', function (Y) {
 	
 });
 
-
-	$(function() {
-		$( "#slider-range-min" ).slider({
-			range: "min",
-			value: 100,
-			min: 100,
-			max: 700,
-			slide: function( event, ui ) {
-				$( "#amount" ).val( "$" + ui.value );
-			}
-		});
-		$( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
-	});
 
