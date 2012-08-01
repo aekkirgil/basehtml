@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% block bread %}
+	<div class="bread-crumb hel">
+		<a href="/">Anasayfa</a>&gt; Çalışıyoruz
+	</div>
+{% endblock %}
 {% block main %}
 	<div class="dash1"><h1><a href="{% url hakkimizda %}">HAKKIMIZDA</a></h1></div>
 	<div class="dash2"><h1 class="htext"><a href="{% url calisiyoruz %}">NASIL CALISIYORUZ</a></h1></div>

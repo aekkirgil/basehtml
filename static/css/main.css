@@ -12,6 +12,9 @@ body {
 	font-size:1px;
 	line-height:0px
 }
+a {
+	text-decoration:none;
+}
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('../fonts/League-gothic/league_gothic-webfont.eot');
@@ -488,8 +491,11 @@ body {
 }
 .sip-window li {
 	color:#284d5c;
-	list-style-type:circle;
-	line-height:30px;
+	/*list-style-type:circle;*/
+	line-height:23px;
+	background: url('../img/base_sprite2.png') no-repeat;
+	background-position:-225px -242px;
+	padding-left:27px;
 }
 .sip-window ul {
 	padding:15px 35px 15px 85px;
@@ -700,7 +706,19 @@ body {
 	margin: 24px 0 0 26px;
 
 }
-    
-    
-    
+  
+.bread-crumb {
+	position:relative;
+	padding:5px;
+	color:#000;
+	font-size:12px;
+}
+.bread-crumb a {
+	color:#e5330e;
+}
+.bread {
+	width:980px;
+	height:20px;
+	padding:10px;
+}
 
