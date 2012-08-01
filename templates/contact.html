@@ -4,26 +4,25 @@
         <h1>contact us now or fill out the form</h1>
         <div class="contact-arrow"></div>
         <div class="contact-form">
-             <ul>
-                <li>
-                    <p class="form-comment"><label for="form_name" class="required">Your name<em>:</em></label></p>
-                    <input type="text" name="name" value="" id="form_name" />
-                </li>
-                <li>
-                    <p class="form-comment"><label for="form_email" class="required">Your email<em>:</em></label></p>
-                    <input type="text" name="email" value="" id="form_email" />
-                </li>
-                <li>
-                    <p class="form-textarea"><label for="form-textarea" class="required">Your comment<em>:</em></label></p>
-                    <textarea id="form-textarea" name="textarea" rows="8" cols="40"></textarea>
-                </li>
-            </ul>
-            
-            
+        	<form action="das" method="GET">
+        		<ul>
+		            <li>
+		                <p class="form-comment"><label for="form_name" class="required">Your name:</label></p>
+		                <input class="contact-form-input" type="text" name="name" value="" id="form_name" />
+		            </li>
+		            <li>
+		                <p class="form-comment"><label for="form_email" class="required">Your email:</label></p>
+		                <input class="contact-form-input" type="text" name="email" value="" id="form_email" />
+		            </li>
+		            <li>
+		                <p class="form-textarea"><label for="form-textarea" class="required">Your comment:</label></p>
+		                <textarea id="form-textarea" name="textarea" rows="8" cols="40"></textarea>
+		            </li>
+		            <li class="form-btn-li">
+		            	<button type="submit" name="contactbtn" value="send" class="contact-btn">Send</button>
+		            </li>
+		        </ul>	
+        	</form>
         </div>
     </div>
-
-
-
-
 {%endblock%}

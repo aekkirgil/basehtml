@@ -548,7 +548,7 @@ body {
     width:980px;
     height:410px;
 }
-.slides_container div {
+.slides_container div {@
     width:980px;
     height:410px;
     display:block;
@@ -634,32 +634,33 @@ body {
 }
 
 .contact-form {
-    margin: 140px 0 0 150px;
+    margin: 6px 0 0 80px;
     width: 600px;
     display: inline-block;
 
 }
 
-.contact-form li input {
+.contact-form-input {
     display: inline-block;
     border: 2px solid #d2d2d2;
-    width: 220px;
-    height: 40px;
-    margin-left: 20px;
+    width: 160px;
+    height: 34px;
+    margin: 0 0 0 20px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     outline: 0;
-    text-align: center;
     font-size: 14px;
     color: #515151;
+    padding-left: 10px;
+    background-color: #ffffff;
 }
 
 .contact-form li textarea {
     display: inline-block;
     border: 2px solid #d2d2d2;
-    width: 530px;
-    height: 200px;
+    width: 520px;
+    height: 177px;
     margin: 10px 0 0 22px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -667,6 +668,8 @@ body {
     outline: 0;
     font-size: 14px;
     color: #515151;
+    padding: 10px;
+    background-color: #ffffff;
 }
 
 .form-comment {
@@ -678,7 +681,24 @@ body {
 .form-textarea {
     font-size: 14px;
     color: #515151;
-    padding: 60px 0 0 32px;
+    padding: 27px 0 0 32px;
+}
+
+.contact-btn {
+	background: url('../img/base_sprite2.png') no-repeat;
+	background-position: -628px -322px;
+	width: 120px;
+	height: 59px;
+	border: 0 !important;
+	z-index: 999;
+	font-family: LeagueGothicRegular;
+	color: white;
+	font-size: 24px;
+}
+
+.form-btn-li {
+	margin: 24px 0 0 26px;
+
 }
     
     
