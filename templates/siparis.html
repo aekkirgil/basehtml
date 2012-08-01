@@ -60,6 +60,92 @@
 					<li>jquery slider</li>
 					<li class="bg-li"></li>
 <li>jquery slider</li>
+{% block main %}
+	<div class="menu_ui">
+		<div class="bg-orange"></div>	
+		<div class="siparis-ui menu-item"><a href="#">Siparis</a></div>
+		<div class="tarife-ui menu-item"><a href="#">Tarifeler</a></div>
+	</div>
+	<br class="clearfloat" />
+	<div class="sip-tar">	
+	<div class="sip-tar-left">
+	{% block siparis %}
+		<div class="sip-main">
+		
+			<h3>ORDER NOW!</h3>
+			<p class="hel">It's obvious that you're ready to make an order. Take a look at our prices at menu, and call the waiter</p>
+			<!-- Siparis icerik begin -->		
+			<div class="sip-this">
+				<div class="price-show">
+					<p>
+						<input type="text" id="amount" style="border:0; color:#cd6b52; font-weight:bold; text-align:right;" />
+					</p>
+				</div>
+				<div class="sip-this-numb"><span>1</span></div>
+				<h1>Project Options</h1>
+				<p class="pd12">How many Pages?</p>
+				<div class="price-pages dro">				
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+					<li>15+</li>
+				</ul>
+				</div>
+				<div class="demo">
+					<div id="slider-range-min"></div>
+				</div>
+				<div class="sip-pointer">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td><input type="radio" name="some_name" value="" id="" />XHTML/CSS</td>
+							<td><input type="radio" name="some_name" value="" id="" />XHTML/CSS + Wordpress (+$200)</td>
+							<td><input type="radio" name="some_name" value="" id="" />Only HTML E-Mail ($100/Page)</td>
+						</tr>
+
+							
+					</table>
+				</div>
+			<!-- End demo -->
+			</div>
+			<div class="sip-this">
+				<div class="sip-this-numb"><span>2</span></div>
+			</div>
+			<div class="sip-this">
+				<div class="sip-this-numb"><span>3</span></div>
+			</div>
+			<div class="sip-this">
+				<div class="sip-this-numb"><span>4</span></div>
+			</div>
+			<!-- siparis icerik	end -->	
+		</div>
+	</div>
+	<div class="sip-tar-right"></div>
+	</div>
+	{% endblock %}
+	{% block tarifler %}
+	<div class="tar-main hide">
+		<div class="tar-main-top dro">
+			<div class="title"><h3>HTML & CSS</h3></div>
+			<div class="title"><h3>MAİLİNG</h3></div>
+			<div class="title"><h3>NEWSLETTER</h3></div>
+		</div>
+		<div class="tar-center-table">
+			<div class="tar-window br-left">
+				<h3><i>$300</i></h3>
+				<ul>
+					<li>jquery slider</li>
 					<li class="bg-li"></li>
 					<li>jquery slider</li>
 					<li class="bg-li"></li>
@@ -74,7 +160,7 @@
 				</ul>
 							
 			</div>
-			<div class="sip-window br-left br-right">
+			<div class="tar-window br-left br-right">
 				<h3><i>$100</i></h3>
 				<ul>
 					<li>jquery slider</li>
@@ -91,7 +177,7 @@
 					<li class="bg-li"></li>
 				</ul>			
 			</div>
-			<div class="sip-window br-right">
+			<div class="tar-window br-right">
 				<h3><i>$100</i></h3>
 				<ul>
 					<li>jquery slider</li>
@@ -109,10 +195,12 @@
 				</ul>			
 			</div>
 			<br class="clearfloat" />
-			<div class="sip-main-bottom br-left br-right"></div>
-			<div class="middle-sip-brdr"></div>
+			<div class="tar-main-bottom br-left br-right">
+			</div>
+			<div class="middle-tar-brdr"></div>
 		</div>
 	</div>
 
-
+	{% endblock %}
 {% endblock %}
+
