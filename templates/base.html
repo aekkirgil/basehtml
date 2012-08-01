@@ -5,11 +5,20 @@
 	  <title>basehtml</title>
 	  <link rel="stylesheet" href="{{ STATIC_URL }}css/reset-min.css" type="text/css" />
 	  <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" type="text/css" />
-	  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
-	  <script type="text/javascript" src="{{ STATIC_URL }}js/slides.jquery.js"></script>
-	  <script type="text/javascript" src="{{ STATIC_URL }}js/basehtml.js"></script>
-		{% block extra_head %}
-		{% endblock %}
+	  <link rel="stylesheet" href="{{ STATIC_URL }}css/jquery-ui-slider.css" type="text/css" />
+	  <link rel="stylesheet" href="http://yui.yahooapis.com/2.9.0/build/slider/assets/skins/sam/slider.css" type="text/css" />
+	  <script type="text/javascript" src="{{ STATIC_URL }}js/LAB.min.js"></script>
+	  <script>
+	  $LAB
+		.setOptions({
+			BasePath: "{{STATIC_URL}}js/"		
+		})
+		.script("http://yui.yahooapis.com/3.5.1/build/yui/yui-min.js").wait()
+		.script("jquery.min.js").wait()
+		.script("slides.jquery.js").wait()
+	    .script("basehtml.js")
+		.script("jquery-ui-1.8.22.custom.min.js");
+	  </script>
   </head>
   <body>
   	  <div id="head">
