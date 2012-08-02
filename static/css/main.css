@@ -43,8 +43,10 @@ a {
 }
 .dro {
 	font-family:DroidSerif !important;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 35px;
+	font-weight: 700;
+	color: #ffffff;
 }
 .hel {
 	font-family:Helvetica !important;
@@ -173,8 +175,8 @@ a {
 	overflow:hidden;
 }
 .footer_nav {
-	width:980px;
-	padding-top:10px;
+	width:1070px;
+	height:250px;
 }
 .footer_nav1 {
 	width: 160px;
@@ -474,7 +476,7 @@ a {
 	border:3px solid #fff;
 	background: url('../img/map_bg.jpg') no-repeat;
 	position:relative;
-	margin-top:30px;
+	margin: 30px 0 0 160px;
 }
 .is-here {
 	width:75px;
@@ -743,7 +745,6 @@ em {
 	height:30px;
 	behavior:url(/static/css/pie/PIE.htc);
 	border-radius:10px;
-	border:1px solid #000;
 	background: url('../img/menu-ui-bg-white.jpg') repeat;
 	position:relative;
 }
@@ -849,20 +850,52 @@ em {
 .sip-pointer td{padding:0px 5px 0px 5px;}
 #demo-frame > div.demo { padding: 10px !important; }
 
+.notification {
+	display: inline-block;
+	margin: 42px 0 0 0;
+}
+
 .notification-input {
-    display: inline-block;
+	display: inline-block;
     border: 2px solid #d2d2d2;
-    width: 160px;
-    height: 34px;
+    width: 208px;
+    height: 38px;
     margin: 0 0 0 20px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     outline: 0;
-    font-size: 16px;
-    font-family: LeagueGothicRegular;
-    color: #515151;
-    padding-left: 10px;
+    padding-left: 14px;
     background-color: #dcdcdc;
+    font-size: 12px;
+    font-family: DroidSerif;
+    color: #515151;
+    
+
 }
 
+.form-natification {
+	color: #ffffff;
+	font-weight: 700;
+	padding: 0 0 10px 25px;
+	font-family: DroidSerif;
+	font-size: 16px;
+}
+
+.notification-btn {
+	display: inline-block;
+	padding: 0 0 0 5px;
+}
+
+.signup-btn {
+	background: url('../img/base_sprite2.png') no-repeat;
+	background-position: -628px -322px;
+	width: 120px;
+	height: 59px;
+	border: 0 !important;
+	z-index: 999;
+	font-family: LeagueGothicRegular;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 30px;
+}

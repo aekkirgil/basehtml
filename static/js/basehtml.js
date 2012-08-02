@@ -42,8 +42,8 @@ $(document).ready(function(){
 		});
 		$( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
 		
-		/*$('').each(function() {
-        $(this).val('*');
+		$('#notification-email').each(function() {
+        $(this).val('Sign up for our newsletter');
         var orginalValue = $(this).val();
         $(this).focus(function() {
             
@@ -59,7 +59,7 @@ $(document).ready(function(){
                 $(this).val();
             }                
         });
-    });*/
+    });
 });
 
 YUI().use('transition', 'node', 'slider', function (Y) {
